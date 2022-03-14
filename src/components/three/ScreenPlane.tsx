@@ -107,7 +107,7 @@ void main() {
   vec2 centeredUV = (v_uv - 0.5) * vec2(u_aspect, 1.0);
   vec3 ray = normalize(vec3(centeredUV, -1.0));
 
-  vec2 m = u_mouse *  vec2(u_aspect, 1.0) * 0.07;
+  vec2 m = u_mouse * vec2(u_aspect, 1.0) * 0.07;
   ray = rotate(ray, vec3(1.0, 0.0, 0.0), m.y);
   ray = rotate(ray, vec3(0.0, 1.0, 0.0), -m.x);
 
