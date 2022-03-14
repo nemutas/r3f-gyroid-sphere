@@ -1,4 +1,4 @@
-import React, { useRef, VFC } from 'react';
+import React, { VFC } from 'react';
 import * as THREE from 'three';
 import { Plane } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
