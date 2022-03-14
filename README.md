@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# About
+In this application, we have replicated the model of [Richard Mattka's site](https://richardmattka.com/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://nemutas.github.io/r3f-gyroid-sphere/
 
-## Available Scripts
+![20220315006](https://user-images.githubusercontent.com/46724121/158200864-0731cc59-13c7-4add-a71d-611a610704b2.gif)
 
-In the project directory, you can run:
+# Technology
 
-### `npm start`
+- TypeScript
+- React（Create React App）
+- React Three Fiber（Three.js）
+- Raymarching
+- Post-processing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Reference
+This is a technical document on Raymarching. They are all very easy to understand and are excellent documents.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [wgld.org](https://wgld.org/d/glsl/g008.html) - Japanese
+* [Inigo Quilez - articles](https://www.iquilezles.org/www/index.htm)
+* [Raymarching simple scene #48](https://www.youtube.com/watch?v=q2WcGi3Cr9w&t=6s)
+* [Live Coding and Alien Orb - Modeling & Shadows](https://www.youtube.com/watch?v=b0AayhCO7s8&t=416s)
 
-### `npm test`
+# License
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This source code is not MIT License.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+❌ Commercial use is prohibited.<br>
+❌ Redistribution is prohibited.<br>
+❌ Diversion is prohibited.（Incorporate all of the code into the project, etc.）<br>
+✅ You can look at the application and reproduce the representation.<br>
+✅ You can use parts of the code.
