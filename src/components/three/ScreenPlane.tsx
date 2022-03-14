@@ -1,4 +1,4 @@
-import React, { VFC } from 'react';
+import React, { useRef, VFC } from 'react';
 import * as THREE from 'three';
 import { Plane } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
@@ -15,10 +15,11 @@ export const ScreenPlane: VFC = () => {
 		fragmentShader: fragmentShader
 	}
 
+	const vec = new THREE.Vector2()
 	useFrame(({ size, mouse }) => {
 		shader.uniforms.u_time.value += 0.005
 		shader.uniforms.u_aspect.value = size.width / size.height
-		shader.uniforms.u_mouse.value.set(mouse.x / 2, mouse.y / 2)
+		shader.uniforms.u_mouse.value.lerp(vec.set(mouse.x / 2, mouse.y / 2), 0.05)
 	})
 
 	return (
@@ -106,7 +107,7 @@ void main() {
   vec2 centeredUV = (v_uv - 0.5) * vec2(u_aspect, 1.0);
   vec3 ray = normalize(vec3(centeredUV, -1.0));
 
-  vec2 m = u_mouse *  vec2(u_aspect, 1.0) * 0.05;
+  vec2 m = u_mouse *  vec2(u_aspect, 1.0) * 0.07;
   ray = rotate(ray, vec3(1.0, 0.0, 0.0), m.y);
   ray = rotate(ray, vec3(0.0, 1.0, 0.0), -m.x);
 
