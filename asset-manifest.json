@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/r3f-gyroid-sphere/static/css/main.a840767e.css",
-    "main.js": "/r3f-gyroid-sphere/static/js/main.6d8065ce.js",
+    "main.js": "/r3f-gyroid-sphere/static/js/main.f39cdce0.js",
     "static/js/27.700c96b9.chunk.js": "/r3f-gyroid-sphere/static/js/27.700c96b9.chunk.js",
     "index.html": "/r3f-gyroid-sphere/index.html"
   },
   "entrypoints": [
     "static/css/main.a840767e.css",
-    "static/js/main.6d8065ce.js"
+    "static/js/main.f39cdce0.js"
   ]
 }
