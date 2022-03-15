@@ -80,7 +80,7 @@ float ballGyroid(in vec3 p, float t) {
 
 float sdf(vec3 p) {
   vec3 rp = rotate(p, vec3(0.3, 1.0, 0.2), u_time * 0.3);
-  float t = (sin(u_time * 0.5) + 1.0) * 0.5; // 0 ~ 1
+  float t = (sin(u_time * 0.5 + PI / 2.0) + 1.0) * 0.5; // 0 ~ 1
   
   float sphere = sdSphere(p, 1.0);
   float g = ballGyroid(rp, t);
